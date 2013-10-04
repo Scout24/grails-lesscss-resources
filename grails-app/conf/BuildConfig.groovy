@@ -3,8 +3,7 @@ grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 grails.project.target.level = 1.6
 grails.project.source.level = 1.6
-grails.project.repos.nexus.url = "http://devnex.rz.is24.loc/content/repositories/i-search-releases"
-grails.project.repos.artifactory.url = "http://deviar01.dev.is24.loc/artifactory/simple/libs-release-local"
+grails.project.repos.artifactory.url = "http://deviar10.rz.is/artifactory/simple/libs-release-local"
 grails.project.repos.default = "artifactory"
 grails.release.scm.enabled = false
 
@@ -29,7 +28,7 @@ grails.project.dependency.resolution = {
 
   repositories {
     inherit false
-    mavenRepo name: "artifactory", root: "http://deviar01.dev.is24.loc/artifactory/all"
+    mavenRepo name: "artifactory", root: "http://deviar10.rz.is/artifactory/all"
   }
 
   dependencies {
