@@ -41,6 +41,14 @@ grails.project.dependency.resolution = {
     test ('org.gmock:gmock:0.8.2') {
       export = false
     }
+    def seleniumVersion = '2.35.0'
+    test "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
+    test("com.github.detro.ghostdriver:phantomjsdriver:1.0.4") {
+      exclude 'selenium-java'
+      exclude 'selenium-server'
+      exclude 'jetty-repackaged'
+      exclude 'htmlunit'
+    }
   }
 
   plugins {
@@ -50,5 +58,6 @@ grails.project.dependency.resolution = {
       exclude "spock-grails-support"
     }
     compile (":tomcat:$grailsVersion") { export = false }
+
   }
 }

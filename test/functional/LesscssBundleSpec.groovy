@@ -1,11 +1,9 @@
 import geb.spock.GebReportingSpec
-import spock.lang.Stepwise
 
 /**
  * @author Paul Fairless
  */
-@Stepwise
-class LesscssBundleSpec extends GebReportingSpec {
+class LesscssBundleSpec extends GebReportingSpec{
     def "check less-css rules rendered"() {
         when:
         go('http://localhost:8080/lesscss-resources')
