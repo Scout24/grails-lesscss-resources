@@ -3,7 +3,7 @@ grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 grails.project.target.level = 1.6
 grails.project.source.level = 1.6
-grails.project.repos.artifactory.url = "http://deviar10.rz.is/artifactory/simple/libs-release-local"
+grails.project.repos.artifactory.url = "http://deviar10.rz.is/artifactory/simple/libs-snapshot-local"
 grails.project.repos.default = "artifactory"
 grails.release.scm.enabled = false
 
